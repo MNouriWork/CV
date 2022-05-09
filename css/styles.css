@@ -1,0 +1,219 @@
+body {
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+hr {
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 5em auto;
+}
+
+h1 {
+
+    margin: 0 auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    line-height: 2;
+    color: #66BFBF;
+}
+
+
+h2 {
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: normal;
+    color: #66BFBF;
+}
+
+
+h3 {
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #11999E;
+}
+
+
+
+img {
+    margin: 0;
+    position: relative;
+
+}
+
+span {
+    text-decoration: underline;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+
+
+
+/*************Class Selectors************/
+
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle-container {
+    margin: 3em 0;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 1em 0 1em;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    width: 23%;
+    max-width: 10em;
+
+}
+
+.down-cloud {
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    width: 25%;
+    max-width: 15em;
+
+}
+
+.mountain {
+    position: relative;
+    width: 80vw;
+    top: .3em;
+    max-width: 70em;
+}
+
+
+.profile-img {
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-radius: 100%;
+    width: 20%;
+}
+
+.intro {
+    margin-bottom: 2em;
+}
+
+.skills {
+    margin-top: 3em;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 5em auto 5em auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.code-description {
+
+    color: forestgreen;
+}
+
+.manage-description {
+    color: dodgerblue;
+}
+
+.game-description {
+
+    color: darksalmon;
+}
+
+.code-img {
+    border-style: solid;
+    border-color: lightgreen;
+    border-radius: 100%;
+
+    float: left;
+    width: 25%;
+    max-width: 10em;
+
+    margin-right: 1em;
+}
+
+.manage-img {
+    border-style: solid;
+    border-color: lightskyblue;
+    border-radius: 100%;
+
+    float: right;
+    width: 25%;
+    max-width: 10em;
+
+    margin-left: 1em;
+}
+
+.games-console-img {
+    border-style: solid;
+    border-color: lightsalmon;
+    border-radius: 100%;
+
+    float: left;
+    width: 25%;
+    max-width: 10em;
+
+    margin-right: 1em;
+
+}
+
+.contact-message {
+    width: 50%;
+    margin: 1em auto 2.5em;
+    color: #564268;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 0.7em;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 1em;
+    padding: 0.5em 0 0;
+}
