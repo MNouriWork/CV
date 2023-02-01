@@ -140,10 +140,6 @@ a:hover {
 
     color: darksalmon;
 }
-.play-game-description {
-
-    color: firebrick;
-}
 
 .code-img {
     border-style: solid;
@@ -171,7 +167,7 @@ a:hover {
 }.play-game-img {
     border-style: solid;
     border-color: firebrick;
-    border-radius: 100%;
+    border-radius: 90%;
 
     float: right;
     width: 25%;

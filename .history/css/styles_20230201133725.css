@@ -171,7 +171,7 @@ a:hover {
 }.play-game-img {
     border-style: solid;
     border-color: firebrick;
-    border-radius: 100%;
+    border-radius: 90%;
 
     float: right;
     width: 25%;
