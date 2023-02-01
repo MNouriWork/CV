@@ -136,7 +136,7 @@ a:hover {
     color: dodgerblue;
 }
 
-.game-description {
+.game-development-description {
 
     color: darksalmon;
 }
@@ -156,6 +156,17 @@ a:hover {
 .manage-img {
     border-style: solid;
     border-color: lightskyblue;
+    border-radius: 100%;
+
+    float: right;
+    width: 25%;
+    max-width: 10em;
+
+    margin-left: 1em;
+
+}.play-game-img {
+    border-style: solid;
+    border-color: firebrick;
     border-radius: 100%;
 
     float: right;
