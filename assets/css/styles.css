@@ -330,6 +330,7 @@ html[data-theme="dark"] .artwork-community { background: #203732; }
 .back-to-top { font-size: 10px; font-weight: 800; color: #cce2db; }
 .back-to-top:hover { color: white; }
 
+
 /* Responsive layout: fluid type and consistent vertical rhythm from wide desktop to 320px phones. */
 @media (min-width: 1440px) {
   .hero { padding-top: 104px; }
