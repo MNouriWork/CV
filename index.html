@@ -1,272 +1,1147 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Mohammad Nouri is a lead developer and project manager working on software and game projects from concept through release.">
-  <meta name="theme-color" content="#f5f7f7">
-  <title>Mohammad Nouri | Lead Developer &amp; Project Manager</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' rx='18' fill='%230b6f68'/%3E%3Cpath d='M14 21 40 8 66 21 66 58 40 72 14 58Z' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3Cpath d='M23 51V29L40 43 57 29V51' fill='none' stroke='%23ffffff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='60' cy='58' r='4' fill='%23f2b56d'/%3E%3C/svg%3E">
-  <link rel="preload" as="image" href="assets/profile-mohammad.webp">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script>
-    (() => {
-      const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      try {
-        const saved = localStorage.getItem('mn-theme');
-        document.documentElement.dataset.theme = saved === 'dark' || saved === 'light' ? saved : preferred;
-      } catch (_) {
-        document.documentElement.dataset.theme = preferred;
-      }
-    })();
-  </script>
-  <script src="assets/js/main.js" defer></script>
-</head>
-<body>
-  <div id="site-root" class="site-root">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="nav-shell">
-      <a class="brand" href="#top" aria-label="Mohammad Nouri home">
-        <span class="brand-mark" aria-hidden="true"><svg class="brand-logo" viewBox="0 0 48 48" focusable="false"><path d="M24 3.5 43.5 14.2v19.6L24 44.5 4.5 33.8V14.2Z" fill="none" stroke="currentColor" stroke-opacity=".42" stroke-width="1.4"/><path d="M11.5 31.5V16.5L24 27 36.5 16.5v15" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36.5" cy="35.5" r="3.2" fill="#f2b56d"/></svg></span>
-        <span class="brand-copy"><strong>MOHAMMAD NOURI</strong><small>GAME &amp; SOFTWARE DEVELOPMENT</small></span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="menu-toggle-lines" aria-hidden="true"><span></span><span></span></span>
-        <span class="sr-only">Open navigation menu</span>
-      </button>
-      <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
-        <a href="#highlights">Highlights</a>
-        <a href="#experience">Experience</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#recognition">Recognition</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch color theme">
-          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.6 8.6 0 1 0 20.2 15.2Z"/></svg>
-          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
-          <span class="theme-label">Dark</span>
-        </button>
-      </nav>
-    </div>
-  </header>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="color-scheme" content="light dark" />
+		<meta
+			name="description"
+			content="Mohammad Nouri is a lead developer and project manager working on software and game projects from concept through release."
+		/>
+		<meta name="theme-color" content="#f5f7f7" />
+		<title>Mohammad Nouri | Lead Developer &amp; Project Manager</title>
+		<link
+			rel="icon"
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' rx='18' fill='%230b6f68'/%3E%3Cpath d='M14 21 40 8 66 21 66 58 40 72 14 58Z' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3Cpath d='M23 51V29L40 43 57 29V51' fill='none' stroke='%23ffffff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='60' cy='58' r='4' fill='%23f2b56d'/%3E%3C/svg%3E"
+		/>
+		<link rel="preload" as="image" href="assets/profile-mohammad.webp" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<script>
+			(() => {
+				const preferred = window.matchMedia("(prefers-color-scheme: dark)")
+					.matches
+					? "dark"
+					: "light";
+				try {
+					const saved = localStorage.getItem("mn-theme");
+					document.documentElement.dataset.theme =
+						saved === "dark" || saved === "light" ? saved : preferred;
+				} catch (_) {
+					document.documentElement.dataset.theme = preferred;
+				}
+			})();
+		</script>
+		<script src="assets/js/main.js" defer></script>
+	</head>
+	<body>
+		<div id="site-root" class="site-root">
+			<a class="skip-link" href="#main">Skip to content</a>
+			<header class="site-header">
+				<div class="nav-shell">
+					<a class="brand" href="#top" aria-label="Mohammad Nouri home">
+						<span class="brand-mark" aria-hidden="true"
+							><svg class="brand-logo" viewBox="0 0 48 48" focusable="false">
+								<path
+									d="M24 3.5 43.5 14.2v19.6L24 44.5 4.5 33.8V14.2Z"
+									fill="none"
+									stroke="currentColor"
+									stroke-opacity=".42"
+									stroke-width="1.4"
+								/>
+								<path
+									d="M11.5 31.5V16.5L24 27 36.5 16.5v15"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="3.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<circle cx="36.5" cy="35.5" r="3.2" fill="#f2b56d" /></svg
+						></span>
+						<span class="brand-copy"
+							><strong>MOHAMMAD NOURI</strong
+							><small>GAME &amp; SOFTWARE DEVELOPMENT</small></span
+						>
+					</a>
+					<button
+						class="menu-toggle"
+						type="button"
+						aria-expanded="false"
+						aria-controls="primary-navigation"
+					>
+						<span class="menu-toggle-lines" aria-hidden="true"
+							><span></span><span></span
+						></span>
+						<span class="sr-only">Open navigation menu</span>
+					</button>
+					<nav
+						class="primary-nav"
+						id="primary-navigation"
+						aria-label="Main navigation"
+					>
+						<a href="#highlights">Highlights</a>
+						<a href="#experience">Experience</a>
+						<a href="#expertise">Expertise</a>
+						<a href="#recognition">Recognition</a>
+						<a href="#contact">Contact</a>
+						<button
+							class="theme-toggle"
+							type="button"
+							aria-label="Switch to dark mode"
+							title="Switch color theme"
+						>
+							<svg
+								class="theme-icon theme-icon-moon"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+							>
+								<path
+									d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.6 8.6 0 1 0 20.2 15.2Z"
+								/>
+							</svg>
+							<svg
+								class="theme-icon theme-icon-sun"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+							>
+								<circle cx="12" cy="12" r="4" />
+								<path
+									d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+								/>
+							</svg>
+							<span class="theme-label">Dark</span>
+						</button>
+					</nav>
+				</div>
+			</header>
 
-  <main id="main">
-    <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="hero-identity">
-          <div class="profile-avatar"><img class="profile-photo" src="assets/profile-mohammad.webp" alt="Portrait of Mohammad Nouri" width="104" height="105"></div>
-          <div class="profile-nameplate">
-            <span class="profile-greeting">HELLO, I’M</span>
-            <strong>Mohammad Nouri</strong>
-            <span class="profile-note">Game and software development</span>
-          </div>
-        </div>
-        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> LEAD DEVELOPER <span class="eyebrow-dot" aria-hidden="true">·</span> PROJECT MANAGER</p>
-        <h1 id="hero-title">I build games and software <span class="accent-text">from prototype to release.</span></h1>
-        <p class="hero-intro">My work combines hands-on development and technical planning with team coordination through release and ongoing support.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#experience">Explore my experience <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-          <a class="button button-secondary" href="assets/mohammad-nouri-cv.pdf" download>Download CV <svg class="icon icon-download" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m-5-5 5 5 5-5M5 21h14"/></svg></a>
-        </div>
-        <div class="hero-meta" aria-label="Professional focus">
-          <div class="meta-item"><span class="meta-indicator" aria-hidden="true"></span><span>Game &amp; software delivery</span></div>
-          <span class="meta-divider" aria-hidden="true"></span>
-          <div class="meta-item"><span>Unity</span><span class="meta-slash" aria-hidden="true">/</span><span>Agile &amp; Scrum</span></div>
-        </div>
-      </div>
-      <div class="hero-visual game-scene" aria-label="Isometric game scene with 3D shapes and a pixel-art character" role="img">
-        <div class="visual-topline"><span>GAME WORLDS / PROTOTYPES</span><span class="visual-index">MN / 01</span></div>
-        <div class="scene-glow scene-glow-one" aria-hidden="true"></div>
-        <div class="scene-glow scene-glow-two" aria-hidden="true"></div>
-        <svg class="game-world-svg" viewBox="0 0 520 370" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-          <defs>
-            <linearGradient id="platformTop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#88e0ce"/><stop offset="1" stop-color="#3b9f92"/></linearGradient>
-            <linearGradient id="platformFront" x1="0" y1="0" x2="0.7" y2="1"><stop offset="0" stop-color="#276c66"/><stop offset="1" stop-color="#16443f"/></linearGradient>
-            <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe2a1"/><stop offset="1" stop-color="#f2b56d"/></linearGradient>
-            <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9924a"/><stop offset="1" stop-color="#9d5e2f"/></linearGradient>
-            <linearGradient id="cubeRight" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c77e3d"/><stop offset="1" stop-color="#774327"/></linearGradient>
-            <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9c7ff"/><stop offset=".48" stop-color="#9d8be6"/><stop offset="1" stop-color="#6754b0"/></linearGradient>
-            <pattern id="sceneGrid" width="35" height="35" patternUnits="userSpaceOnUse" patternTransform="skewY(-28)"><path d="M35 0H0V35" fill="none" stroke="#6bc5b5" stroke-opacity=".2" stroke-width="1"/></pattern>
-            <filter id="sceneShadow" x="-40%" y="-40%" width="180%" height="190%"><feGaussianBlur stdDeviation="7"/></filter>
-          </defs>
-          <ellipse cx="270" cy="296" rx="175" ry="28" fill="#020c0b" opacity=".34" filter="url(#sceneShadow)"/>
-          <path d="M42 250 262 122 483 250 262 378Z" fill="url(#sceneGrid)" opacity=".9"/>
-          <path d="M78 264 252 164 427 264 252 365Z" fill="#143a35" stroke="#4b9789" stroke-opacity=".5"/>
-          <path d="M78 264 252 365V338L78 237Z" fill="#12312e"/>
-          <path d="M252 365 427 264V237L252 338Z" fill="#0d2825"/>
-          <path d="M78 237 252 137 427 237 252 338Z" fill="url(#platformTop)"/>
-          <path d="M100 237 252 150 405 237 252 325Z" fill="#193d38" stroke="#85cdbf" stroke-opacity=".38"/>
-          <path d="M142 237 252 174 363 237 252 300Z" fill="none" stroke="#81cdbd" stroke-opacity=".25" stroke-dasharray="5 7"/>
-          <!-- Isometric 3D cube -->
-          <g class="scene-cube">
-            <path d="M185 152 244 118 303 152 244 186Z" fill="url(#cubeTop)"/>
-            <path d="M185 152 244 186V252L185 217Z" fill="url(#cubeLeft)"/>
-            <path d="M244 186 303 152V217L244 252Z" fill="url(#cubeRight)"/>
-            <path d="M244 118V186" stroke="#fff0cb" stroke-opacity=".55" stroke-width="2"/>
-            <path d="M185 152 244 186 303 152" fill="none" stroke="#fff0cb" stroke-opacity=".6" stroke-width="2"/>
-            <path d="M244 186V252" stroke="#f9ca8c" stroke-opacity=".5" stroke-width="2"/>
-          </g>
-          <!-- Floating 3D orb / collectible -->
-          <g>
-            <ellipse cx="364" cy="135" rx="35" ry="10" fill="#b8a9ff" opacity=".16"/>
-            <circle cx="364" cy="121" r="27" fill="url(#orb)"/>
-            <ellipse cx="355" cy="111" rx="8" ry="5" transform="rotate(-35 355 111)" fill="#fff" opacity=".5"/>
-            <path d="M340 121A24 24 0 0 0 383 136" fill="none" stroke="#e2d8ff" stroke-opacity=".7" stroke-width="2"/>
-          </g>
-          <!-- Stylized 2D pixel-art character -->
-          <g transform="translate(103 170)">
-            <path d="M-12 53h35v9h-35z" fill="#041311" opacity=".32"/>
-            <path d="M-4 5h22v22H-4z" fill="#f2b56d"/>
-            <path d="M-4 5h22v6H-4zM1 0h12v5H1z" fill="#ffe1ac"/>
-            <path d="M-9 27h32v22H-9z" fill="#e56e65"/>
-            <path d="M-9 32h8v17h-8z" fill="#bd4f50"/>
-            <path d="M-6 49h10v11H-6zM10 49h10v11H10z" fill="#8cb7ff"/>
-            <path d="M23 30h7v-7h7v-8h6v8h-6v7h-7v7h-7z" fill="#d5e5ff"/>
-            <path d="M4 14h3v3H4zM13 14h3v3h-3z" fill="#1c2a29"/>
-          </g>
-          <g transform="translate(408 226)">
-            <path d="M0 0 25 -14 50 0 25 14Z" fill="#b9efe5" opacity=".75"/>
-            <path d="M0 0 25 14V43L0 29Z" fill="#3f9e91"/>
-            <path d="M25 14 50 0V29L25 43Z" fill="#246e68"/>
-            <path d="M25 -14V14" stroke="#e4fff8" stroke-opacity=".7"/>
-          </g>
-          <path d="M107 120 114 106 121 120 114 134Z" fill="#ffe2a1" opacity=".8"/>
-          <path d="M427 100h12m-6-6v12" stroke="#a89af4" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="135" cy="95" r="3" fill="#8adccb"/><circle cx="422" cy="155" r="2" fill="#f2b56d"/>
-        </svg>
-        <div class="scene-sticker scene-sticker-2d"><span class="sticker-symbol pixel-symbol" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 8-4 4 4 4M16 8l4 4-4 4m-3-7-2 6"/></svg></span><span><strong>2D GAMEPLAY</strong><small>Mechanics · feel</small></span></div>
-        <div class="scene-sticker scene-sticker-3d"><span class="sticker-symbol cube-symbol" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="m12 2.8 8 4.6v9.2l-8 4.6-8-4.6V7.4l8-4.6Z"/><path d="m4 7.4 8 4.7 8-4.7m-8 4.7v9.1"/></svg></span><span><strong>3D WORLDS</strong><small>Space · systems</small></span></div>
-        <div class="visual-footnote"><span class="footnote-mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="5"/><path d="m8.4 12-1 8 4.6-2.6 4.6 2.6-1-8M10 8l1.3 1.3L14.5 6"/></svg></span> Game prototypes and interactive worlds.</div>
-      </div>
-      <div class="hero-bottom-note"><span>FOCUS</span><span>ENGINEERING</span><span>TEAMWORK</span><span>ITERATION</span></div>
-    </section>
+			<main id="main">
+				<section
+					class="hero section-wrap"
+					id="top"
+					aria-labelledby="hero-title"
+				>
+					<div class="hero-copy">
+						<div class="hero-identity">
+							<div class="profile-avatar">
+								<img
+									class="profile-photo"
+									src="assets/profile-mohammad.webp"
+									alt="Portrait of Mohammad Nouri"
+									width="104"
+									height="105"
+								/>
+							</div>
+							<div class="profile-nameplate">
+								<span class="profile-greeting">HELLO, I’M</span>
+								<strong>Mohammad Nouri</strong>
+								<span class="profile-note">Game and software development</span>
+							</div>
+						</div>
+						<p class="eyebrow">
+							<span class="eyebrow-line" aria-hidden="true"></span> LEAD
+							DEVELOPER
+							<span class="eyebrow-dot" aria-hidden="true">·</span> PROJECT
+							MANAGER
+						</p>
+						<h1 id="hero-title">
+							I build games and software
+							<span class="accent-text">from prototype to release.</span>
+						</h1>
+						<p class="hero-intro">
+							My work combines hands-on development and technical planning with
+							team coordination through release and ongoing support.
+						</p>
+						<div class="hero-actions">
+							<a class="button button-primary" href="#experience"
+								>Explore my experience
+								<svg
+									class="icon icon-arrow"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path d="M7 17 17 7M8 7h9v9" /></svg
+							></a>
+							<a
+								class="button button-secondary"
+								href="assets/mohammad-nouri-cv.pdf"
+								download
+								>Download CV
+								<svg
+									class="icon icon-download"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path d="M12 3v12m-5-5 5 5 5-5M5 21h14" /></svg
+							></a>
+						</div>
+						<div class="hero-meta" aria-label="Professional focus">
+							<div class="meta-item">
+								<span class="meta-indicator" aria-hidden="true"></span
+								><span>Game &amp; software delivery</span>
+							</div>
+							<span class="meta-divider" aria-hidden="true"></span>
+							<div class="meta-item">
+								<span>Unity</span
+								><span class="meta-slash" aria-hidden="true">/</span
+								><span>Agile &amp; Scrum</span>
+							</div>
+						</div>
+					</div>
+					<div
+						class="hero-visual game-scene"
+						aria-label="Isometric game scene with 3D shapes and a pixel-art character"
+						role="img"
+					>
+						<div class="visual-topline">
+							<span>GAME WORLDS / PROTOTYPES</span
+							><span class="visual-index">MN / 01</span>
+						</div>
+						<div class="scene-glow scene-glow-one" aria-hidden="true"></div>
+						<div class="scene-glow scene-glow-two" aria-hidden="true"></div>
+						<svg
+							class="game-world-svg"
+							viewBox="0 0 520 370"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<defs>
+								<linearGradient id="platformTop" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0" stop-color="#88e0ce" />
+									<stop offset="1" stop-color="#3b9f92" />
+								</linearGradient>
+								<linearGradient
+									id="platformFront"
+									x1="0"
+									y1="0"
+									x2="0.7"
+									y2="1"
+								>
+									<stop offset="0" stop-color="#276c66" />
+									<stop offset="1" stop-color="#16443f" />
+								</linearGradient>
+								<linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0" stop-color="#ffe2a1" />
+									<stop offset="1" stop-color="#f2b56d" />
+								</linearGradient>
+								<linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0" stop-color="#d9924a" />
+									<stop offset="1" stop-color="#9d5e2f" />
+								</linearGradient>
+								<linearGradient id="cubeRight" x1="0" y1="0" x2="0" y2="1">
+									<stop offset="0" stop-color="#c77e3d" />
+									<stop offset="1" stop-color="#774327" />
+								</linearGradient>
+								<linearGradient id="orb" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0" stop-color="#d9c7ff" />
+									<stop offset=".48" stop-color="#9d8be6" />
+									<stop offset="1" stop-color="#6754b0" />
+								</linearGradient>
+								<pattern
+									id="sceneGrid"
+									width="35"
+									height="35"
+									patternUnits="userSpaceOnUse"
+									patternTransform="skewY(-28)"
+								>
+									<path
+										d="M35 0H0V35"
+										fill="none"
+										stroke="#6bc5b5"
+										stroke-opacity=".2"
+										stroke-width="1"
+									/>
+								</pattern>
+								<filter
+									id="sceneShadow"
+									x="-40%"
+									y="-40%"
+									width="180%"
+									height="190%"
+								>
+									<feGaussianBlur stdDeviation="7" />
+								</filter>
+							</defs>
+							<ellipse
+								cx="270"
+								cy="296"
+								rx="175"
+								ry="28"
+								fill="#020c0b"
+								opacity=".34"
+								filter="url(#sceneShadow)"
+							/>
+							<path
+								d="M42 250 262 122 483 250 262 378Z"
+								fill="url(#sceneGrid)"
+								opacity=".9"
+							/>
+							<path
+								d="M78 264 252 164 427 264 252 365Z"
+								fill="#143a35"
+								stroke="#4b9789"
+								stroke-opacity=".5"
+							/>
+							<path d="M78 264 252 365V338L78 237Z" fill="#12312e" />
+							<path d="M252 365 427 264V237L252 338Z" fill="#0d2825" />
+							<path
+								d="M78 237 252 137 427 237 252 338Z"
+								fill="url(#platformTop)"
+							/>
+							<path
+								d="M100 237 252 150 405 237 252 325Z"
+								fill="#193d38"
+								stroke="#85cdbf"
+								stroke-opacity=".38"
+							/>
+							<path
+								d="M142 237 252 174 363 237 252 300Z"
+								fill="none"
+								stroke="#81cdbd"
+								stroke-opacity=".25"
+								stroke-dasharray="5 7"
+							/>
+							<!-- Isometric 3D cube -->
+							<g class="scene-cube">
+								<path
+									d="M185 152 244 118 303 152 244 186Z"
+									fill="url(#cubeTop)"
+								/>
+								<path d="M185 152 244 186V252L185 217Z" fill="url(#cubeLeft)" />
+								<path
+									d="M244 186 303 152V217L244 252Z"
+									fill="url(#cubeRight)"
+								/>
+								<path
+									d="M244 118V186"
+									stroke="#fff0cb"
+									stroke-opacity=".55"
+									stroke-width="2"
+								/>
+								<path
+									d="M185 152 244 186 303 152"
+									fill="none"
+									stroke="#fff0cb"
+									stroke-opacity=".6"
+									stroke-width="2"
+								/>
+								<path
+									d="M244 186V252"
+									stroke="#f9ca8c"
+									stroke-opacity=".5"
+									stroke-width="2"
+								/>
+							</g>
+							<!-- Floating 3D orb / collectible -->
+							<g>
+								<ellipse
+									cx="364"
+									cy="135"
+									rx="35"
+									ry="10"
+									fill="#b8a9ff"
+									opacity=".16"
+								/>
+								<circle cx="364" cy="121" r="27" fill="url(#orb)" />
+								<ellipse
+									cx="355"
+									cy="111"
+									rx="8"
+									ry="5"
+									transform="rotate(-35 355 111)"
+									fill="#fff"
+									opacity=".5"
+								/>
+								<path
+									d="M340 121A24 24 0 0 0 383 136"
+									fill="none"
+									stroke="#e2d8ff"
+									stroke-opacity=".7"
+									stroke-width="2"
+								/>
+							</g>
+							<!-- Stylized 2D pixel-art character -->
+							<g transform="translate(103 170)">
+								<path d="M-12 53h35v9h-35z" fill="#041311" opacity=".32" />
+								<path d="M-4 5h22v22H-4z" fill="#f2b56d" />
+								<path d="M-4 5h22v6H-4zM1 0h12v5H1z" fill="#ffe1ac" />
+								<path d="M-9 27h32v22H-9z" fill="#e56e65" />
+								<path d="M-9 32h8v17h-8z" fill="#bd4f50" />
+								<path d="M-6 49h10v11H-6zM10 49h10v11H10z" fill="#8cb7ff" />
+								<path d="M23 30h7v-7h7v-8h6v8h-6v7h-7v7h-7z" fill="#d5e5ff" />
+								<path d="M4 14h3v3H4zM13 14h3v3h-3z" fill="#1c2a29" />
+							</g>
+							<g transform="translate(408 226)">
+								<path
+									d="M0 0 25 -14 50 0 25 14Z"
+									fill="#b9efe5"
+									opacity=".75"
+								/>
+								<path d="M0 0 25 14V43L0 29Z" fill="#3f9e91" />
+								<path d="M25 14 50 0V29L25 43Z" fill="#246e68" />
+								<path d="M25 -14V14" stroke="#e4fff8" stroke-opacity=".7" />
+							</g>
+							<path
+								d="M107 120 114 106 121 120 114 134Z"
+								fill="#ffe2a1"
+								opacity=".8"
+							/>
+							<path
+								d="M427 100h12m-6-6v12"
+								stroke="#a89af4"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<circle cx="135" cy="95" r="3" fill="#8adccb" />
+							<circle cx="422" cy="155" r="2" fill="#f2b56d" />
+						</svg>
+						<div class="scene-sticker scene-sticker-2d">
+							<span class="sticker-symbol pixel-symbol" aria-hidden="true"
+								><svg
+									class="icon"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path d="m8 8-4 4 4 4M16 8l4 4-4 4m-3-7-2 6" /></svg></span
+							><span
+								><strong>2D GAMEPLAY</strong
+								><small>Mechanics · feel</small></span
+							>
+						</div>
+						<div class="scene-sticker scene-sticker-3d">
+							<span class="sticker-symbol cube-symbol" aria-hidden="true"
+								><svg class="icon" viewBox="0 0 24 24" focusable="false">
+									<path d="m12 2.8 8 4.6v9.2l-8 4.6-8-4.6V7.4l8-4.6Z" />
+									<path d="m4 7.4 8 4.7 8-4.7m-8 4.7v9.1" /></svg></span
+							><span
+								><strong>3D WORLDS</strong><small>Space · systems</small></span
+							>
+						</div>
+						<div class="visual-footnote">
+							<span class="footnote-mark" aria-hidden="true"
+								><svg
+									class="icon"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<circle cx="12" cy="8" r="5" />
+									<path
+										d="m8.4 12-1 8 4.6-2.6 4.6 2.6-1-8M10 8l1.3 1.3L14.5 6"
+									/></svg
+							></span>
+							Game prototypes and interactive worlds.
+						</div>
+					</div>
+					<div class="hero-bottom-note">
+						<span>FOCUS</span><span>ENGINEERING</span><span>TEAMWORK</span
+						><span>ITERATION</span>
+					</div>
+				</section>
 
-    <section class="proof-strip" aria-label="Selected professional highlights">
-      <div class="proof-inner">
-        <div class="proof-lead"><span class="proof-kicker">AREAS OF FOCUS</span><strong>Development, delivery<br>and team collaboration.</strong></div>
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5.2a3.3 3.3 0 0 0-6.1 1.7 3.5 3.5 0 0 0-1 6.2A3.4 3.4 0 0 0 8 19.2c1.6 0 2.8-1 3-2.4V5.2Zm0 0a3.3 3.3 0 0 1 6.1 1.7 3.5 3.5 0 0 1 1 6.2 3.4 3.4 0 0 1-3.1 6.1c-1.6 0-2.8-1-3-2.4V5.2Z"/><path d="M8.1 8.2c1.7 0 2.4 1.1 2.4 2.6m5.4-2.6c-1.7 0-2.4 1.1-2.4 2.6M7 14.1c1.9-.2 3.1.9 3.4 2.4m6.6-2.4c-1.9-.2-3.1.9-3.4 2.4"/></svg></span><div><strong>Medical AI research</strong><small>Paper accepted · CNNs</small></div></div>
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 4h8v5a4 4 0 0 1-8 0V4ZM8 6H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4M12 13v5m-4 2h8m-6-2h4"/></svg></span><div><strong>Game Jam · 2025</strong><small>First-place team</small></div></div>
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 5.5A2.5 2.5 0 0 1 6 3h5v16H6a2.5 2.5 0 0 0-2.5 2V5.5ZM20.5 5.5A2.5 2.5 0 0 0 18 3h-5v16h5a2.5 2.5 0 0 1 2.5 2V5.5Z"/><path d="M6.5 7H9m-2.5 4H9m6-4h2.5m-2.5 4H17"/></svg></span><div><strong>Continuous learning</strong><small>Web · AI · Security</small></div></div>
-      </div>
-    </section>
+				<section
+					class="proof-strip"
+					aria-label="Selected professional highlights"
+				>
+					<div class="proof-inner">
+						<div class="proof-lead">
+							<span class="proof-kicker">AREAS OF FOCUS</span
+							><strong
+								>Development, delivery<br />and team collaboration.</strong
+							>
+						</div>
+						<div class="proof-item">
+							<span class="proof-icon" aria-hidden="true"
+								><svg
+									class="icon"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path
+										d="M12 5.2a3.3 3.3 0 0 0-6.1 1.7 3.5 3.5 0 0 0-1 6.2A3.4 3.4 0 0 0 8 19.2c1.6 0 2.8-1 3-2.4V5.2Zm0 0a3.3 3.3 0 0 1 6.1 1.7 3.5 3.5 0 0 1 1 6.2 3.4 3.4 0 0 1-3.1 6.1c-1.6 0-2.8-1-3-2.4V5.2Z"
+									/>
+									<path
+										d="M8.1 8.2c1.7 0 2.4 1.1 2.4 2.6m5.4-2.6c-1.7 0-2.4 1.1-2.4 2.6M7 14.1c1.9-.2 3.1.9 3.4 2.4m6.6-2.4c-1.9-.2-3.1.9-3.4 2.4"
+									/></svg
+							></span>
+							<div>
+								<strong>Medical AI research</strong
+								><small>Paper accepted · CNNs</small>
+							</div>
+						</div>
+						<div class="proof-item">
+							<span class="proof-icon" aria-hidden="true"
+								><svg
+									class="icon"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path
+										d="M8 4h8v5a4 4 0 0 1-8 0V4ZM8 6H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4M12 13v5m-4 2h8m-6-2h4"
+									/></svg
+							></span>
+							<div>
+								<strong>Game Jam · 2025</strong><small>First-place team</small>
+							</div>
+						</div>
+						<div class="proof-item">
+							<span class="proof-icon" aria-hidden="true"
+								><svg
+									class="icon"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path
+										d="M3.5 5.5A2.5 2.5 0 0 1 6 3h5v16H6a2.5 2.5 0 0 0-2.5 2V5.5ZM20.5 5.5A2.5 2.5 0 0 0 18 3h-5v16h5a2.5 2.5 0 0 1 2.5 2V5.5Z"
+									/>
+									<path d="M6.5 7H9m-2.5 4H9m6-4h2.5m-2.5 4H17" /></svg
+							></span>
+							<div>
+								<strong>Continuous learning</strong
+								><small>Web · AI · Security</small>
+							</div>
+						</div>
+					</div>
+				</section>
 
-    <section class="section-wrap section-block" id="highlights" aria-labelledby="highlights-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">01 / SELECTED HIGHLIGHTS</p><h2 id="highlights-title">Selected work and contributions</h2></div>
-        <p class="section-description">Examples from my work in software, medical AI research, and the game development community.</p>
-      </div>
-      <div class="highlight-grid">
-        <article class="highlight-card highlight-research">
-          <div class="card-topline"><span class="card-category">RESEARCH</span><span class="card-number">01</span></div>
-          <div class="artwork artwork-research" aria-hidden="true"><div class="node-map"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b>AI</b></div><span class="artwork-caption">PATTERNS / SIGNALS / LEARNING</span></div>
-          <h3>Medical AI &amp; CNNs</h3>
-          <p>I have an accepted paper on medical AI and convolutional neural networks (CNNs).</p>
-          <div class="card-footer"><span>Research</span><span class="card-footer-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
-        </article>
-        <article class="highlight-card highlight-gamejam">
-          <div class="card-topline"><span class="card-category">TEAM ACHIEVEMENT</span><span class="card-number">02</span></div>
-          <div class="artwork artwork-gamejam" aria-hidden="true"><div class="trophy-shape"><span>1</span></div><div class="pixel-stars"><i>✳</i><i>✦</i><i>✳</i></div><span class="artwork-caption">IDEA → PLAYABLE EXPERIENCE</span></div>
-          <h3>Game Jam · First Place</h3>
-          <p>Our team placed first at the 2025 Game Jam. I have also been part of teams that placed second and third at other events.</p>
-          <div class="card-footer"><span>Game development</span><a href="https://globalgamejam.org/users/ev2rev" target="_blank" rel="noreferrer">Game Jam profile <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-        </article>
-        <article class="highlight-card highlight-community">
-          <div class="card-topline"><span class="card-category">COMMUNITY &amp; LEARNING</span><span class="card-number">03</span></div>
-          <div class="artwork artwork-community" aria-hidden="true"><div class="community-orbit community-orbit-a"></div><div class="community-orbit community-orbit-b"></div><span class="community-center">{ }</span><span class="community-label community-label-a">SHARE</span><span class="community-label community-label-b">BUILD</span><span class="community-label community-label-c">GROW</span></div>
-          <h3>Teaching &amp; Community</h3>
-          <p>I teach programming and game development, and have helped organize a workshop on game development and AI.</p>
-          <div class="card-footer"><span>Mentorship</span><span class="card-footer-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
-        </article>
-      </div>
-    </section>
+				<section
+					class="section-wrap section-block"
+					id="highlights"
+					aria-labelledby="highlights-title"
+				>
+					<div class="section-heading">
+						<div>
+							<p class="eyebrow">01 / SELECTED HIGHLIGHTS</p>
+							<h2 id="highlights-title">Selected work and contributions</h2>
+						</div>
+						<p class="section-description">
+							Examples from my work in software, medical AI research, and the
+							game development community.
+						</p>
+					</div>
+					<div class="highlight-grid">
+						<article class="highlight-card highlight-research">
+							<div class="card-topline">
+								<span class="card-category">RESEARCH</span
+								><span class="card-number">01</span>
+							</div>
+							<div class="artwork artwork-research" aria-hidden="true">
+								<div class="node-map">
+									<i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+									><b>AI</b>
+								</div>
+								<span class="artwork-caption"
+									>PATTERNS / SIGNALS / LEARNING</span
+								>
+							</div>
+							<h3>Medical AI &amp; CNNs</h3>
+							<p>
+								I have an accepted paper on medical AI and convolutional neural
+								networks (CNNs).
+							</p>
+							<div class="card-footer">
+								<span>Research</span
+								><span class="card-footer-icon" aria-hidden="true"
+									><svg
+										class="icon icon-arrow"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path d="M7 17 17 7M8 7h9v9" /></svg
+								></span>
+							</div>
+						</article>
+						<article class="highlight-card highlight-gamejam">
+							<div class="card-topline">
+								<span class="card-category">TEAM ACHIEVEMENT</span
+								><span class="card-number">02</span>
+							</div>
+							<div class="artwork artwork-gamejam" aria-hidden="true">
+								<div class="trophy-shape"><span>1</span></div>
+								<div class="pixel-stars"><i>✳</i><i>✦</i><i>✳</i></div>
+								<span class="artwork-caption">IDEA → PLAYABLE EXPERIENCE</span>
+							</div>
+							<h3>Game Jam · First Place</h3>
+							<p>
+								Our team placed first at the 2025 Game Jam. I have also been
+								part of teams that placed second and third at other events.
+							</p>
+							<div class="card-footer">
+								<span>Game development</span
+								><a
+									href="https://globalgamejam.org/users/m.nouri"
+									target="_blank"
+									rel="noreferrer"
+									>Game Jam profile
+									<svg
+										class="icon icon-arrow"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path d="M7 17 17 7M8 7h9v9" /></svg
+								></a>
+							</div>
+						</article>
+						<article class="highlight-card highlight-community">
+							<div class="card-topline">
+								<span class="card-category">COMMUNITY &amp; LEARNING</span
+								><span class="card-number">03</span>
+							</div>
+							<div class="artwork artwork-community" aria-hidden="true">
+								<div class="community-orbit community-orbit-a"></div>
+								<div class="community-orbit community-orbit-b"></div>
+								<span class="community-center">{ }</span
+								><span class="community-label community-label-a">SHARE</span
+								><span class="community-label community-label-b">BUILD</span
+								><span class="community-label community-label-c">GROW</span>
+							</div>
+							<h3>Teaching &amp; Community</h3>
+							<p>
+								I teach programming and game development, and have helped
+								organize a workshop on game development and AI.
+							</p>
+							<div class="card-footer">
+								<span>Mentorship</span
+								><span class="card-footer-icon" aria-hidden="true"
+									><svg
+										class="icon icon-arrow"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path d="M7 17 17 7M8 7h9v9" /></svg
+								></span>
+							</div>
+						</article>
+					</div>
+				</section>
 
-    <section class="experience-section" id="experience" aria-labelledby="experience-title">
-      <div class="section-wrap section-block">
-        <div class="section-heading">
-          <div><p class="eyebrow">02 / EXPERIENCE</p><h2 id="experience-title">Development and<br>project leadership</h2></div>
-          <p class="section-description">I work hands-on in game development and coordinate teams from the first prototype through release and support.</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline-entry timeline-current">
-            <div class="timeline-date"><span>FEB 2017 – PRESENT</span><span class="current-pill"><span aria-hidden="true"></span> Current</span></div>
-            <div class="timeline-content"><div class="timeline-title-row"><div><h3>Lead Developer &amp; Project Manager</h3><p class="timeline-company">Umeent <span>·</span> Freelance</p></div><a class="external-mark" href="https://www.umeent.com" target="_blank" rel="noreferrer" aria-label="Visit Umeent website"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div><p>I lead game and software projects from prototype through release and support. I handle technical planning and coordinate an international, cross-functional team.</p><div class="tag-row"><span>Unity</span><span>Agile / Scrum</span><span>Project delivery</span><span>Team leadership</span></div></div>
-          </article>
-          <article class="timeline-entry">
-            <div class="timeline-date"><span>FEB 2021 – FEB 2022</span></div>
-            <div class="timeline-content"><h3>Senior Game Developer</h3><p class="timeline-company">Selenium apps <span>·</span> Contract <span>·</span> Kuwait City, Kuwait</p><div class="tag-row"><span>Game development</span><span>Delivery</span></div></div>
-          </article>
-          <article class="timeline-entry">
-            <div class="timeline-date"><span>NOV 2020 – JAN 2021</span></div>
-            <div class="timeline-content"><h3>Senior Game Developer</h3><p class="timeline-company">Soho Games <span>·</span> Contract <span>·</span> Istanbul, Türkiye</p><div class="tag-row"><span>Game development</span><span>Prototyping</span></div></div>
-          </article>
-          <article class="timeline-entry">
-            <div class="timeline-date"><span>OCT 2014 – JAN 2017</span></div>
-            <div class="timeline-content"><h3>Game Developer</h3><p class="timeline-company">GTreen <span>·</span> Freelance <span>·</span> Tehran, Iran</p><div class="tag-row"><span>Game development</span><span>Creative execution</span></div></div>
-          </article>
-        </div>
-      </div>
-    </section>
+				<section
+					class="experience-section"
+					id="experience"
+					aria-labelledby="experience-title"
+				>
+					<div class="section-wrap section-block">
+						<div class="section-heading">
+							<div>
+								<p class="eyebrow">02 / EXPERIENCE</p>
+								<h2 id="experience-title">
+									Development and<br />project leadership
+								</h2>
+							</div>
+							<p class="section-description">
+								I work hands-on in game development and coordinate teams from
+								the first prototype through release and support.
+							</p>
+						</div>
+						<div class="timeline">
+							<article class="timeline-entry timeline-current">
+								<div class="timeline-date">
+									<span>FEB 2017 – PRESENT</span
+									><span class="current-pill"
+										><span aria-hidden="true"></span> Current</span
+									>
+								</div>
+								<div class="timeline-content">
+									<div class="timeline-title-row">
+										<div>
+											<h3>Lead Developer &amp; Project Manager</h3>
+											<p class="timeline-company">
+												Umeent <span>·</span> Freelance
+											</p>
+										</div>
+										<a
+											class="external-mark"
+											href="https://www.umeent.com"
+											target="_blank"
+											rel="noreferrer"
+											aria-label="Visit Umeent website"
+											><svg
+												class="icon icon-arrow"
+												viewBox="0 0 24 24"
+												aria-hidden="true"
+												focusable="false"
+											>
+												<path d="M7 17 17 7M8 7h9v9" /></svg
+										></a>
+									</div>
+									<p>
+										I lead game and software projects from prototype through
+										release and support. I handle technical planning and
+										coordinate an international, cross-functional team.
+									</p>
+									<div class="tag-row">
+										<span>Unity</span><span>Agile / Scrum</span
+										><span>Project delivery</span><span>Team leadership</span>
+									</div>
+								</div>
+							</article>
+							<article class="timeline-entry">
+								<div class="timeline-date">
+									<span>FEB 2021 – FEB 2022</span>
+								</div>
+								<div class="timeline-content">
+									<h3>Senior Game Developer</h3>
+									<p class="timeline-company">
+										Selenium apps <span>·</span> Contract <span>·</span> Kuwait
+										City, Kuwait
+									</p>
+									<div class="tag-row">
+										<span>Game development</span><span>Delivery</span>
+									</div>
+								</div>
+							</article>
+							<article class="timeline-entry">
+								<div class="timeline-date">
+									<span>NOV 2020 – JAN 2021</span>
+								</div>
+								<div class="timeline-content">
+									<h3>Senior Game Developer</h3>
+									<p class="timeline-company">
+										Soho Games <span>·</span> Contract <span>·</span> Istanbul,
+										Türkiye
+									</p>
+									<div class="tag-row">
+										<span>Game development</span><span>Prototyping</span>
+									</div>
+								</div>
+							</article>
+							<article class="timeline-entry">
+								<div class="timeline-date">
+									<span>OCT 2014 – JAN 2017</span>
+								</div>
+								<div class="timeline-content">
+									<h3>Game Developer</h3>
+									<p class="timeline-company">
+										GTreen <span>·</span> Freelance <span>·</span> Tehran, Iran
+									</p>
+									<div class="tag-row">
+										<span>Game development</span><span>Creative execution</span>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
 
-    <section class="section-wrap section-block" id="expertise" aria-labelledby="expertise-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">03 / EXPERTISE</p><h2 id="expertise-title">Development, delivery,<br>and research</h2></div>
-        <p class="section-description">My work combines hands-on development with project planning, team coordination, and research.</p>
-      </div>
-      <div class="expertise-grid">
-        <article class="expertise-card"><div class="expertise-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 8-4 4 4 4M16 8l4 4-4 4m-3-7-2 6"/></svg></div><p class="expertise-index">01 · ENGINEERING</p><h3>Software &amp; game development</h3><p>I develop games and software with Unity, Unreal Engine, .NET Core Web API, and Python.</p><div class="skill-chips"><span>Unity</span><span>Unreal Engine</span><span>.NET Core Web API</span><span>Python</span><span>Prototyping</span></div></article>
-        <article class="expertise-card"><div class="expertise-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 20v-1.5a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V20m7.5-9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm5-6.5a3.2 3.2 0 0 1 0 6.2M17 14.7a4.1 4.1 0 0 1 4 4V20"/></svg></div><p class="expertise-index">02 · DELIVERY</p><h3>Project &amp; team leadership</h3><p>I plan work, set priorities, and help teams resolve blockers as projects move toward release.</p><div class="skill-chips"><span>Agile</span><span>Scrum</span><span>Cross-functional teams</span><span>Rapid iteration</span><span>Conflict resolution</span></div></article>
-        <article class="expertise-card"><div class="expertise-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5.2a3.3 3.3 0 0 0-6.1 1.7 3.5 3.5 0 0 0-1 6.2A3.4 3.4 0 0 0 8 19.2c1.6 0 2.8-1 3-2.4V5.2Zm0 0a3.3 3.3 0 0 1 6.1 1.7 3.5 3.5 0 0 1 1 6.2 3.4 3.4 0 0 1-3.1 6.1c-1.6 0-2.8-1-3-2.4V5.2Z"/><path d="M8.1 8.2c1.7 0 2.4 1.1 2.4 2.6m5.4-2.6c-1.7 0-2.4 1.1-2.4 2.6M7 14.1c1.9-.2 3.1.9 3.4 2.4m6.6-2.4c-1.9-.2-3.1.9-3.4 2.4"/></svg></div><p class="expertise-index">03 · RESEARCH &amp; COMMUNITY</p><h3>Research &amp; knowledge sharing</h3><p>My work includes medical AI research, teaching programming and game development, and running workshops.</p><div class="skill-chips"><span>Medical AI</span><span>CNNs</span><span>Teaching</span><span>Workshops</span><span>Mentorship</span></div></article>
-      </div>
-    </section>
+				<section
+					class="section-wrap section-block"
+					id="expertise"
+					aria-labelledby="expertise-title"
+				>
+					<div class="section-heading">
+						<div>
+							<p class="eyebrow">03 / EXPERTISE</p>
+							<h2 id="expertise-title">
+								Development, delivery,<br />and research
+							</h2>
+						</div>
+						<p class="section-description">
+							My work combines hands-on development with project planning, team
+							coordination, and research.
+						</p>
+					</div>
+					<div class="expertise-grid">
+						<article class="expertise-card">
+							<div class="expertise-icon" aria-hidden="true">
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path d="m8 8-4 4 4 4M16 8l4 4-4 4m-3-7-2 6" />
+								</svg>
+							</div>
+							<p class="expertise-index">01 · ENGINEERING</p>
+							<h3>Software &amp; game development</h3>
+							<p>
+								I develop games and software with Unity, Unreal Engine, .NET
+								Core Web API, and Python.
+							</p>
+							<div class="skill-chips">
+								<span>Unity</span><span>Unreal Engine</span
+								><span>.NET Core Web API</span><span>Python</span
+								><span>Prototyping</span>
+							</div>
+						</article>
+						<article class="expertise-card">
+							<div class="expertise-icon" aria-hidden="true">
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path
+										d="M16 20v-1.5a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V20m7.5-9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm5-6.5a3.2 3.2 0 0 1 0 6.2M17 14.7a4.1 4.1 0 0 1 4 4V20"
+									/>
+								</svg>
+							</div>
+							<p class="expertise-index">02 · DELIVERY</p>
+							<h3>Project &amp; team leadership</h3>
+							<p>
+								I plan work, set priorities, and help teams resolve blockers as
+								projects move toward release.
+							</p>
+							<div class="skill-chips">
+								<span>Agile</span><span>Scrum</span
+								><span>Cross-functional teams</span><span>Rapid iteration</span
+								><span>Conflict resolution</span>
+							</div>
+						</article>
+						<article class="expertise-card">
+							<div class="expertise-icon" aria-hidden="true">
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path
+										d="M12 5.2a3.3 3.3 0 0 0-6.1 1.7 3.5 3.5 0 0 0-1 6.2A3.4 3.4 0 0 0 8 19.2c1.6 0 2.8-1 3-2.4V5.2Zm0 0a3.3 3.3 0 0 1 6.1 1.7 3.5 3.5 0 0 1 1 6.2 3.4 3.4 0 0 1-3.1 6.1c-1.6 0-2.8-1-3-2.4V5.2Z"
+									/>
+									<path
+										d="M8.1 8.2c1.7 0 2.4 1.1 2.4 2.6m5.4-2.6c-1.7 0-2.4 1.1-2.4 2.6M7 14.1c1.9-.2 3.1.9 3.4 2.4m6.6-2.4c-1.9-.2-3.1.9-3.4 2.4"
+									/>
+								</svg>
+							</div>
+							<p class="expertise-index">03 · RESEARCH &amp; COMMUNITY</p>
+							<h3>Research &amp; knowledge sharing</h3>
+							<p>
+								My work includes medical AI research, teaching programming and
+								game development, and running workshops.
+							</p>
+							<div class="skill-chips">
+								<span>Medical AI</span><span>CNNs</span><span>Teaching</span
+								><span>Workshops</span><span>Mentorship</span>
+							</div>
+						</article>
+					</div>
+				</section>
 
-    <section class="recognition-section" id="recognition" aria-labelledby="recognition-title">
-      <div class="section-wrap section-block">
-        <div class="section-heading">
-          <div><p class="eyebrow">04 / RECOGNITION &amp; EDUCATION</p><h2 id="recognition-title">Awards, certificates<br>and education</h2></div>
-          <p class="section-description">Game Jam placements, medical AI research, teaching and workshops, along with my education and certificates.</p>
-        </div>
-        <div class="recognition-layout">
-          <div class="recognition-main">
-            <div class="subsection-heading"><h3>Awards &amp; accomplishments</h3><span>SELECTED</span></div>
-            <div class="recognition-list">
-              <article class="recognition-row"><span class="recognition-symbol" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 4h8v5a4 4 0 0 1-8 0V4ZM8 6H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4M12 13v5m-4 2h8m-6-2h4"/></svg></span><div><h4>First-place team · 2025 Game Jam</h4><p>First-place result with my team at the 2025 Game Jam.</p></div><span class="recognition-year">2025</span></article>
-              <article class="recognition-row"><span class="recognition-symbol" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5.2a3.3 3.3 0 0 0-6.1 1.7 3.5 3.5 0 0 0-1 6.2A3.4 3.4 0 0 0 8 19.2c1.6 0 2.8-1 3-2.4V5.2Zm0 0a3.3 3.3 0 0 1 6.1 1.7 3.5 3.5 0 0 1 1 6.2 3.4 3.4 0 0 1-3.1 6.1c-1.6 0-2.8-1-3-2.4V5.2Z"/><path d="M8.1 8.2c1.7 0 2.4 1.1 2.4 2.6m5.4-2.6c-1.7 0-2.4 1.1-2.4 2.6M7 14.1c1.9-.2 3.1.9 3.4 2.4m6.6-2.4c-1.9-.2-3.1.9-3.4 2.4"/></svg></span><div><h4>Accepted medical AI paper</h4><p>An accepted paper on medical AI and convolutional neural networks.</p></div><span class="recognition-year">RESEARCH</span></article>
-              <article class="recognition-row"><span class="recognition-symbol" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="5"/><path d="m8.4 12-1 8 4.6-2.6 4.6 2.6-1-8M10 8l1.3 1.3L14.5 6"/></svg></span><div><h4>Game Jam · Second and third place</h4><p>Second- and third-place results with teams at other Game Jam events.</p></div><span class="recognition-year">TEAM</span></article>
-              <article class="recognition-row"><span class="recognition-symbol" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 20v-1.5a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V20m7.5-9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm5-6.5a3.2 3.2 0 0 1 0 6.2M17 14.7a4.1 4.1 0 0 1 4 4V20"/></svg></span><div><h4>Teaching &amp; workshop organization</h4><p>Teaching programming and game development, and organizing a Game Dev and AI workshop.</p></div><span class="recognition-year">COMMUNITY</span></article>
-            </div>
-            <div class="subsection-heading cert-heading"><h3>Certificates</h3><span>SELECTED</span></div>
-            <div class="cert-grid">
-              <div class="cert-card"><span class="cert-year">2026</span><strong>Harvard Web</strong><span>Web development</span></div>
-              <div class="cert-card"><span class="cert-year">2025</span><strong>Harvard AI</strong><span>Artificial intelligence</span></div>
-              <div class="cert-card"><span class="cert-year">2025</span><strong>Harvard Cybersecurity</strong><span>Cybersecurity</span></div>
-              <div class="cert-card"><span class="cert-year">2024</span><strong>.NET Core Web API</strong><span>Backend development</span></div>
-              <div class="cert-card"><span class="cert-year">2024</span><strong>Unreal Engine</strong><span>Game technology</span></div>
-              <div class="cert-card"><span class="cert-year">2022</span><strong>Python 3</strong><span>Programming</span></div>
-            </div>
-          </div>
-          <aside class="education-panel" aria-labelledby="education-title">
-            <div class="education-panel-top"><span class="education-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Z"/><path d="M6.5 11.2v5c3.5 2.5 7.5 2.5 11 0v-5M21.5 9v6"/></svg></span><span class="panel-kicker">ACADEMIC BACKGROUND</span></div>
-            <h3 id="education-title">Education</h3>
-            <article class="education-item"><span class="education-date">2023 – 2025</span><h4>Bachelor’s degree</h4><p>Software Engineering</p><strong>Azad University (IAU)</strong><span class="gpa-label">Reported score <b>18.60</b></span></article>
-            <div class="education-divider" aria-hidden="true"></div>
-            <article class="education-item"><span class="education-date">2015 – 2017</span><h4>Associate’s degree</h4><p>Software Engineering</p><strong>Technical and Vocational University of Tabriz</strong></article>
-            <div class="education-divider" aria-hidden="true"></div>
-            <div class="language-block"><span class="panel-kicker">LANGUAGES</span><div class="language-tags"><span>English</span><span>Turkish</span><span>Persian</span><span>Azerbaijani</span></div></div>
-          </aside>
-        </div>
-      </div>
-    </section>
+				<section
+					class="recognition-section"
+					id="recognition"
+					aria-labelledby="recognition-title"
+				>
+					<div class="section-wrap section-block">
+						<div class="section-heading">
+							<div>
+								<p class="eyebrow">04 / RECOGNITION &amp; EDUCATION</p>
+								<h2 id="recognition-title">
+									Awards, certificates<br />and education
+								</h2>
+							</div>
+							<p class="section-description">
+								Game Jam placements, medical AI research, teaching and
+								workshops, along with my education and certificates.
+							</p>
+						</div>
+						<div class="recognition-layout">
+							<div class="recognition-main">
+								<div class="subsection-heading">
+									<h3>Awards &amp; accomplishments</h3>
+									<span>SELECTED</span>
+								</div>
+								<div class="recognition-list">
+									<article class="recognition-row">
+										<span class="recognition-symbol" aria-hidden="true"
+											><svg
+												class="icon"
+												viewBox="0 0 24 24"
+												aria-hidden="true"
+												focusable="false"
+											>
+												<path
+													d="M8 4h8v5a4 4 0 0 1-8 0V4ZM8 6H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4M12 13v5m-4 2h8m-6-2h4"
+												/></svg
+										></span>
+										<div>
+											<h4>First-place team · 2025 Game Jam</h4>
+											<p>
+												First-place result with my team at the 2025 Game Jam.
+											</p>
+										</div>
+										<span class="recognition-year">2025</span>
+									</article>
+									<article class="recognition-row">
+										<span class="recognition-symbol" aria-hidden="true"
+											><svg
+												class="icon"
+												viewBox="0 0 24 24"
+												aria-hidden="true"
+												focusable="false"
+											>
+												<path
+													d="M12 5.2a3.3 3.3 0 0 0-6.1 1.7 3.5 3.5 0 0 0-1 6.2A3.4 3.4 0 0 0 8 19.2c1.6 0 2.8-1 3-2.4V5.2Zm0 0a3.3 3.3 0 0 1 6.1 1.7 3.5 3.5 0 0 1 1 6.2 3.4 3.4 0 0 1-3.1 6.1c-1.6 0-2.8-1-3-2.4V5.2Z"
+												/>
+												<path
+													d="M8.1 8.2c1.7 0 2.4 1.1 2.4 2.6m5.4-2.6c-1.7 0-2.4 1.1-2.4 2.6M7 14.1c1.9-.2 3.1.9 3.4 2.4m6.6-2.4c-1.9-.2-3.1.9-3.4 2.4"
+												/></svg
+										></span>
+										<div>
+											<h4>Accepted medical AI paper</h4>
+											<p>
+												An accepted paper on medical AI and convolutional neural
+												networks.
+											</p>
+										</div>
+										<span class="recognition-year">RESEARCH</span>
+									</article>
+									<article class="recognition-row">
+										<span class="recognition-symbol" aria-hidden="true"
+											><svg
+												class="icon"
+												viewBox="0 0 24 24"
+												aria-hidden="true"
+												focusable="false"
+											>
+												<circle cx="12" cy="8" r="5" />
+												<path
+													d="m8.4 12-1 8 4.6-2.6 4.6 2.6-1-8M10 8l1.3 1.3L14.5 6"
+												/></svg
+										></span>
+										<div>
+											<h4>Game Jam · Second and third place</h4>
+											<p>
+												Second- and third-place results with teams at other Game
+												Jam events.
+											</p>
+										</div>
+										<span class="recognition-year">TEAM</span>
+									</article>
+									<article class="recognition-row">
+										<span class="recognition-symbol" aria-hidden="true"
+											><svg
+												class="icon"
+												viewBox="0 0 24 24"
+												aria-hidden="true"
+												focusable="false"
+											>
+												<path
+													d="M16 20v-1.5a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V20m7.5-9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm5-6.5a3.2 3.2 0 0 1 0 6.2M17 14.7a4.1 4.1 0 0 1 4 4V20"
+												/></svg
+										></span>
+										<div>
+											<h4>Teaching &amp; workshop organization</h4>
+											<p>
+												Teaching programming and game development, and
+												organizing a Game Dev and AI workshop.
+											</p>
+										</div>
+										<span class="recognition-year">COMMUNITY</span>
+									</article>
+								</div>
+								<div class="subsection-heading cert-heading">
+									<h3>Certificates</h3>
+									<span>SELECTED</span>
+								</div>
+								<div class="cert-grid">
+									<div class="cert-card">
+										<span class="cert-year">2026</span
+										><strong>Harvard Web</strong><span>Web development</span>
+									</div>
+									<div class="cert-card">
+										<span class="cert-year">2025</span
+										><strong>Harvard AI</strong
+										><span>Artificial intelligence</span>
+									</div>
+									<div class="cert-card">
+										<span class="cert-year">2025</span
+										><strong>Harvard Cybersecurity</strong
+										><span>Cybersecurity</span>
+									</div>
+									<div class="cert-card">
+										<span class="cert-year">2024</span
+										><strong>.NET Core Web API</strong
+										><span>Backend development</span>
+									</div>
+									<div class="cert-card">
+										<span class="cert-year">2024</span
+										><strong>Unreal Engine</strong><span>Game technology</span>
+									</div>
+									<div class="cert-card">
+										<span class="cert-year">2022</span><strong>Python 3</strong
+										><span>Programming</span>
+									</div>
+								</div>
+							</div>
+							<aside class="education-panel" aria-labelledby="education-title">
+								<div class="education-panel-top">
+									<span class="education-icon" aria-hidden="true"
+										><svg
+											class="icon"
+											viewBox="0 0 24 24"
+											aria-hidden="true"
+											focusable="false"
+										>
+											<path d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Z" />
+											<path
+												d="M6.5 11.2v5c3.5 2.5 7.5 2.5 11 0v-5M21.5 9v6"
+											/></svg></span
+									><span class="panel-kicker">ACADEMIC BACKGROUND</span>
+								</div>
+								<h3 id="education-title">Education</h3>
+								<article class="education-item">
+									<span class="education-date">2023 – 2025</span>
+									<h4>Bachelor’s degree</h4>
+									<p>Software Engineering</p>
+									<strong>Azad University (IAU)</strong
+									><span class="gpa-label">Reported score <b>18.60</b></span>
+								</article>
+								<div class="education-divider" aria-hidden="true"></div>
+								<article class="education-item">
+									<span class="education-date">2015 – 2017</span>
+									<h4>Associate’s degree</h4>
+									<p>Software Engineering</p>
+									<strong>Technical and Vocational University of Tabriz</strong>
+								</article>
+								<div class="education-divider" aria-hidden="true"></div>
+								<div class="language-block">
+									<span class="panel-kicker">LANGUAGES</span>
+									<div class="language-tags">
+										<span>English</span><span>Turkish</span><span>Persian</span
+										><span>Azerbaijani</span>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="section-wrap contact-inner">
-        <div class="contact-copy"><p class="eyebrow">05 / GET IN TOUCH</p><h2 id="contact-title">Let’s talk about<br><span>your project.</span></h2><p>For project enquiries, work opportunities, or collaboration, email me or connect with me on LinkedIn.</p><a class="button button-light" href="mailto:m.nouri.work@gmail.com">Email me <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-        <div class="contact-details"><div class="contact-detail"><span class="contact-detail-label">EMAIL</span><a href="mailto:m.nouri.work@gmail.com">m.nouri.work@gmail.com</a></div><div class="contact-detail"><span class="contact-detail-label">COMPANY</span><a href="https://www.umeent.com" target="_blank" rel="noreferrer">umeent.com <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div><div class="contact-detail"><span class="contact-detail-label">PROFILES</span><div class="profile-links"><a href="https://www.linkedin.com/in/mohammad-nouri-work/" target="_blank" rel="noreferrer"><svg class="social-icon social-linkedin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.1 8.4H2V22h3.1V8.4ZM3.55 2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM22 13.5c0-4.1-2.2-5.7-5.1-5.7a4.4 4.4 0 0 0-3.9 2.1V8.4H9.9V22H13v-7.5c0-2 .4-3.9 2.8-3.9s2.4 2.2 2.4 4V22H22v-8.5Z"/></svg>LinkedIn</a><a href="https://github.com/MNouriWork" target="_blank" rel="noreferrer"><svg class="social-icon social-github" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.76-1.32-3.76-1.32-.5-1.3-1.24-1.65-1.24-1.65-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.77 2.03 3.36 1.43.1-.72.4-1.21.72-1.49-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3-.11-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.54.22 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.25-5.12 5.52.4.35.76 1.02.76 2.07v3.07c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>GitHub</a><a href="https://globalgamejam.org/users/ev2rev" target="_blank" rel="noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 8h10a4 4 0 0 1 3.8 2.8l1 3.6a2.5 2.5 0 0 1-4.2 2.5l-2.1-2H8.5l-2.1 2a2.5 2.5 0 0 1-4.2-2.5l1-3.6A4 4 0 0 1 7 8Z"/><path d="M7 10.5v4m-2-2h4m7-.5h.01m2 2h.01"/></svg>Global Game Jam</a></div></div></div>
-      </div>
-    </section>
-  </main>
+				<section
+					class="contact-section"
+					id="contact"
+					aria-labelledby="contact-title"
+				>
+					<div class="section-wrap contact-inner">
+						<div class="contact-copy">
+							<p class="eyebrow">05 / GET IN TOUCH</p>
+							<h2 id="contact-title">
+								Let’s talk about<br /><span>your project.</span>
+							</h2>
+							<p>
+								For project enquiries, work opportunities, or collaboration,
+								email me or connect with me on LinkedIn.
+							</p>
+							<a
+								class="button button-light"
+								href="mailto:m.nouri.work@gmail.com"
+								>Email me
+								<svg
+									class="icon icon-arrow"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<path d="M7 17 17 7M8 7h9v9" /></svg
+							></a>
+						</div>
+						<div class="contact-details">
+							<div class="contact-detail">
+								<span class="contact-detail-label">EMAIL</span
+								><a href="mailto:m.nouri.work@gmail.com"
+									>m.nouri.work@gmail.com</a
+								>
+							</div>
+							<div class="contact-detail">
+								<span class="contact-detail-label">COMPANY</span
+								><a
+									href="https://www.umeent.com"
+									target="_blank"
+									rel="noreferrer"
+									>umeent.com
+									<svg
+										class="icon icon-arrow"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path d="M7 17 17 7M8 7h9v9" /></svg
+								></a>
+							</div>
+							<div class="contact-detail">
+								<span class="contact-detail-label">PROFILES</span>
+								<div class="profile-links">
+									<a
+										href="https://www.linkedin.com/in/mohammad-nouri-work/"
+										target="_blank"
+										rel="noreferrer"
+										><svg
+											class="social-icon social-linkedin"
+											viewBox="0 0 24 24"
+											aria-hidden="true"
+											focusable="false"
+										>
+											<path
+												d="M5.1 8.4H2V22h3.1V8.4ZM3.55 2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM22 13.5c0-4.1-2.2-5.7-5.1-5.7a4.4 4.4 0 0 0-3.9 2.1V8.4H9.9V22H13v-7.5c0-2 .4-3.9 2.8-3.9s2.4 2.2 2.4 4V22H22v-8.5Z"
+											/></svg
+										>LinkedIn</a
+									><a
+										href="https://github.com/MNouriWork"
+										target="_blank"
+										rel="noreferrer"
+										><svg
+											class="social-icon social-github"
+											viewBox="0 0 24 24"
+											aria-hidden="true"
+											focusable="false"
+										>
+											<path
+												d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.76-1.32-3.76-1.32-.5-1.3-1.24-1.65-1.24-1.65-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.77 2.03 3.36 1.43.1-.72.4-1.21.72-1.49-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3-.11-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.54.22 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.25-5.12 5.52.4.35.76 1.02.76 2.07v3.07c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"
+											/></svg
+										>GitHub</a
+									><a
+										href="https://globalgamejam.org/users/m.nouri"
+										target="_blank"
+										rel="noreferrer"
+										><svg
+											class="social-icon"
+											viewBox="0 0 24 24"
+											aria-hidden="true"
+											focusable="false"
+										>
+											<path
+												d="M7 8h10a4 4 0 0 1 3.8 2.8l1 3.6a2.5 2.5 0 0 1-4.2 2.5l-2.1-2H8.5l-2.1 2a2.5 2.5 0 0 1-4.2-2.5l1-3.6A4 4 0 0 1 7 8Z"
+											/>
+											<path d="M7 10.5v4m-2-2h4m7-.5h.01m2 2h.01" /></svg
+										>Global Game Jam</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 
-  <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="#top">MN<span>.</span></a><p>Game development · Software engineering · Project management</p><span class="copyright">© <span id="current-year">2026</span> Mohammad Nouri</span><a class="back-to-top" href="#top">Back to top <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div></footer>
-  </div>
-</body>
+			<footer class="site-footer">
+				<div class="footer-inner">
+					<a class="footer-brand" href="#top">MN<span>.</span></a>
+					<p>Game development · Software engineering · Project management</p>
+					<span class="copyright"
+						>© <span id="current-year">2026</span> Mohammad Nouri</span
+					><a class="back-to-top" href="#top"
+						>Back to top
+						<svg
+							class="icon icon-arrow"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<path d="M7 17 17 7M8 7h9v9" /></svg
+					></a>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
